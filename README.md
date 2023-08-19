@@ -1,9 +1,13 @@
 CODIGO PARA LEER CODIGOS HEXADECIMALES EN CONSOLA PARA DAR VALORES DE RGB A LA TARJETA CONTROLADORA 
-
+INTEGRANTES: Pedro Sierra , Fernando Mesino
 Librerías Utilizadas: #include "mbed.h": Incluye la librería "mbed" que proporciona una abstracción para interactuar con el hardware, en este caso la tarjeta
 
 2. Define una constante llamada BLINKING_RATE con un valor de 50ms, que será el intervalo entre actualizaciones de los colores de los LEDs.
+
+  
 3. inicializa la comunicación a través del puerto USB de la placa con una velocidad de transmisión de 9600 bps. Esto se hace mediante la línea UnbufferedSerial pc(USBTX, USBRX, 9600);. Esta comunicación serie se utiliza para recibir comandos de cambio de color para los LEDs.
+
+  
 4. MAIN()
   a. Inicializa tres objetos PwmOut llamados ledR, ledG y ledB para controlar los LEDs rojo, verde y azul, respectivamente. Estos objetos permiten generar señales de modulación por ancho de pulso (PWM) para ajustar la    intensidad luminosa de los LEDs.
    b. Establece el período de la señal PWM para cada LED mediante los métodos period().
