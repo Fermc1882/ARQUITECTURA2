@@ -1,5 +1,7 @@
 CODIGO PARA LEER CODIGOS HEXADECIMALES EN CONSOLA PARA DAR VALORES DE RGB A LA TARJETA CONTROLADORA 
+
 INTEGRANTES: Pedro Sierra , Fernando Mesino
+
 Librerías Utilizadas: #include "mbed.h": Incluye la librería "mbed" que proporciona una abstracción para interactuar con el hardware, en este caso la tarjeta
 
 2. Define una constante llamada BLINKING_RATE con un valor de 50ms, que será el intervalo entre actualizaciones de los colores de los LEDs.
